@@ -23,9 +23,23 @@ const userSchema = new Schema(
         required: [true, "Şifre kısmı zorunludur"],
         minLength:[4, "En az 4 haneli olmalıdır"],
     },
+    followers:[
+        {
+            type: Schema.Types.ObjectId,
+            ref: "User",
+        },
+    ],
+
+    followings:[
+        {
+            type: Schema.Types.ObjectId,
+            ref: "User",
+        },
+    ],
+
    },
 
-    {
+    { 
         timestamps: true,
     }
 );
