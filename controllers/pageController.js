@@ -53,6 +53,12 @@ const getaboutPage = (req, res) => {
     });
   };
 
+  const getmapPage = (req, res) =>{
+      res.render("map",{
+        link:"map",
+      });
+
+  };
   const sendMail = async (req,res) => {
 
     const htmlTemplate = `
@@ -216,4 +222,4 @@ const getaboutPage = (req, res) => {
         });
     }
 };
-  export{ getindexPage , getaboutPage,getregisterPage,getLoginPage, getLogout, getContactPage, sendMail };
+  export{ getindexPage , getaboutPage,getregisterPage,getLoginPage, getLogout, getContactPage, sendMail, getmapPage };
