@@ -67,7 +67,7 @@
                 <h2 style="
                 font-size: 30px;
                 margin-bottom: 20px;
-                color:#D43A8E; 
+                color:#e21c1c; 
                 "> Yeni Fotoğraf Ekle</h2>
               </div>
             </div>
@@ -75,10 +75,10 @@
               <form id="request" class="main_form" method="POST" action="/photos/<%= photo._id %>?_method=PUT" enctype="multipart/form-data">
                 <div class="row">
                   <div class="col-md-12">
-                    <input value="<%= photo.name %>" class="form_control" placeholder="Name" type="text" name="name">
+                    <input value="<%= photo.name %>" class="form_control" placeholder="Yemek Adı" type="text" name="name">
                   </div>
                   <div class="col-md-12">
-                    <textarea name="description" style="height: 150px;" class="form_control" placeholder="Description" rows="5"><%= photo.description %></textarea>
+                    <textarea name="description" style="height: 150px;" class="form_control" placeholder="Tarif" rows="5"><%= photo.description %></textarea>
                   </div>
                   
                   <div style="margin-bottom: 20px;" class="col-md-12">
